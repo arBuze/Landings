@@ -126,7 +126,8 @@
 .intro__dash {
   display: inline-block;
   width: 35px;
-  border: 1px solid #FFCA42;
+  height: 2px;
+  background-color: #FFCA42;
   margin-bottom: 4px;
   margin-right: 14px;
 }
@@ -166,6 +167,8 @@
   list-style-image: url(../../images/list-dot.svg);
   display: flex;
   column-gap: 60px;
+  margin: 0;
+  padding: 0 0 0 24px;
 }
 
 .intro__fact-title {
@@ -174,7 +177,31 @@
   padding-bottom: 30px;
 }
 
+.intro__fact-text {
+  display: block;
+  margin-top: 12px;
+  font-size: 17px;
+  line-height: 27px;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #B4C7E7;
+}
+
 .intro__book-img {
   width: 592px;
   height: 800px;
+}
+
+.other-books {
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 110px 0 90px;
+}
+
+.other-books__dash {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #FFCA42;
 }
