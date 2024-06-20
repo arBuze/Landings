@@ -103,6 +103,7 @@
   display: flex;
   justify-content: space-between;
   margin: 100px auto;
+  box-sizing: border-box;
   padding: 0 22px;
 }
 
@@ -160,11 +161,16 @@
   line-height: 36px;
   border-bottom: 1px solid white;
   margin-left: 51px;
+  transition: opacity .2s ease-in;
+}
+
+.intro__read-btn:hover {
+  opacity: .8;
 }
 
 .intro__facts {
   list-style-type: none;
-  list-style-image: url(../../images/list-dot.svg);
+  list-style-image: url(../../images/pages/list-dot.svg);
   display: flex;
   column-gap: 60px;
   margin: 0;
@@ -455,6 +461,325 @@
   margin: 0;
 }
 
+.book-copy {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+  margin: 0 auto;
+}
+
+.book-copy-container {
+  max-width: 540px;
+}
+
+.book-copy__title {
+  font-size: 45px;
+  line-height: 54px;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #FFF;
+  margin: 0 0 24px 0;
+}
+
+.book-copy__paragraph {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 19px;
+  line-height: 28.5px;
+  color: #B4C7E7;
+  margin: 27px 0;
+}
+
 .book-copy__order-btn {
   color: #FFF;
+}
+
+.book-copy__image {
+  width: 560px;
+  height: 394px;
+}
+
+.learn {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0 140px;
+}
+
+.learn__title {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: normal;
+  color: #1B3764;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.learn__dash {
+  margin: 23px 0 90px;
+}
+
+.learn__container {
+  display: flex;
+  gap: 109px;
+  align-items: center;
+}
+
+.learn__skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 303px);
+  grid-template-rows: repeat(2, 272px);
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.learn__skill {
+  background-color: #F4F8FF;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.learn__item {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #FFCA42;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 23px;
+  line-height: 50px;
+  color: #1B3764;
+}
+
+.learn__description {
+  font-size: 24px;
+  line-height: 34px;
+  color: #1B3764;
+  margin: 30px 0 0 0;
+}
+
+.learn__img-container {
+  width: 555px;
+  height: 652px;
+  box-sizing: border-box;
+  border: 10px solid #FFCA42;
+  position: relative;
+}
+
+.learn__image {
+  width: 535px;
+  height: 632px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.knowledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4F8FF;
+  padding: 120px 0;
+}
+
+.knowledge__title {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: normal;
+  color: #1B3764;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.knowledge__dash {
+  margin: 23px 0 70px;
+}
+
+.knowledge__chapters {
+  display: grid;
+  grid-template-columns: repeat(2, 635px);
+  grid-template-rows: repeat(2, 242px);
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+.knowledge__chapter {
+  background-color: #FFF;
+  box-sizing: border-box;
+  padding: 42px 40px 35px;
+}
+
+.knowledge__chapter-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #1B3764;
+  margin: 0;
+}
+
+.knowledge__description {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 19px;
+  line-height: 32px;
+  color: #969AA0;
+  padding-right: 25px;
+  margin: 21px 0 10px;
+}
+
+.knowledge__info {
+  list-style-type: none;
+  list-style-image: url(../../images/pages/list-dot.svg);
+  display: flex;
+  gap: 65px;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+.knowledge__info-value {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 27px;
+  color: #969AA0;
+}
+
+.knowledge__info-title {
+  font-family: 'Cardo', Times, serif;
+  font-size: 22px;
+  line-height: 30px;
+  color: #1B3764;
+  padding: 0 10px 0 5px;
+}
+
+.knowledge__trial-btn {
+  width: 429px;
+  height: 76px;
+  background-color: #FFCA42;
+  border: none;
+  font-size: 19px;
+  line-height: 28.5px;
+  color: #1B3764;
+  cursor: pointer;
+  margin: 60px 0 34px;
+}
+
+.knowledge__trial-btn:hover {
+  color: #FFF;
+}
+
+.knowledge__contact {
+  max-width: 330px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28.5px;
+  color: #969AA0;
+  text-align: center;
+}
+
+.knowledge__link {
+  color: #1B3764;
+  text-decoration: none;
+}
+
+.reviews {
+  background-color: #FFF;
+  padding: 130px 0 150px;
+}
+
+.resources {
+  background-color: #F4F8FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 0 150px;
+}
+
+.resources__title {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: normal;
+  color: #1B3764;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.resources__dash {
+  margin: 23px 0 70px;
+}
+
+.resources__articles {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 622px;
+  gap: 20px;
+}
+
+.resources__card {
+  background-color: #FFF;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.07);
+  font-size: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.resources__article-img {
+  width: 100%;
+}
+
+.resources__article-name {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  color: #1B3764;
+  margin: 25px 55px 0 30px;
+}
+
+.resources__article-description {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 19px;
+  line-height: 30px;
+  color: #969AA0;
+  margin: 19px 30px 13px;
+}
+
+.resources__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px 30px;
+}
+
+.resources__link {
+  font-size: 19px;
+  line-height: 22px;
+  color: #1B3764;
+  text-decoration: none;
+  border-bottom: 2px solid #1B3764;
+  padding-bottom: 4px;
+  transition: opacity .2s ease-in;
+}
+
+.resources__link:hover {
+  opacity: .8;
+}
+
+.resources__date {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1B3764;
+  margin: 0;
+}
+
+.updates {
+  padding: 120px 0;
+}
+
+.updates__container {
+  
 }
